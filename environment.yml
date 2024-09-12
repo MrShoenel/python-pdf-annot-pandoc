@@ -5,4 +5,5 @@ dependencies:
   - pypandoc
   - pypdf2
   - python==3.12
+  - colorama
 prefix: C:\Users\Admin\miniconda3\envs\pdf
