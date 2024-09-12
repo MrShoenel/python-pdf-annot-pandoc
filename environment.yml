@@ -1,0 +1,8 @@
+name: pdf
+channels:
+  - defaults
+dependencies:
+  - pypandoc
+  - pypdf2
+  - python==3.12
+prefix: C:\Users\Admin\miniconda3\envs\pdf
