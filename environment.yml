@@ -6,4 +6,6 @@ dependencies:
   - pypdf2
   - python==3.12
   - colorama
+  - pypdf
+  - joblib
 prefix: C:\Users\Admin\miniconda3\envs\pdf
