@@ -36,7 +36,7 @@ for pdf in pdfs:
     print_green(' `- ', pdf.name)
 
 
-def processPdf(file: Path) -> None|ProcessedPdf:
+def processPdf(file: Path, print_width: int=60) -> None|ProcessedPdf:
     try:
         ex = Extractor(pdf_file=file)
         annots = list(ex.annotations)
@@ -51,7 +51,8 @@ def processPdf(file: Path) -> None|ProcessedPdf:
             with open(file=text_file, mode='w', encoding='utf-8') as fp:
                 fp.write(text)
         
-        print_green(f'Finished: {file.name[:50]} ..., ', f'found {len(annots)} annotations in file.')
+        fname = file.name if len(file.name) < print_width else f'{file.stem[:(print_width - 8)]}...{file.suffix}'
+        print_green(f'Finished: {f"{fname},".ljust(print_width)} ', f'found {len(annots)} annotations in file.')
         return ProcessedPdf(pdf_file=file, annotations=annots, text=text)
     except Exception as ex:
         print_red('Failed processing PDF: ', ex)
