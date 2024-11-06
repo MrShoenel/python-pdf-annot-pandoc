@@ -77,4 +77,4 @@ with open(file=markdown_file, mode='w', encoding='utf-8') as fp:
 
 if args.format != 'markdown':
     output_file = markdown_file.parent.joinpath(f'./{markdown_file.stem}.{args.format}')
-    convert_file(source_file=markdown_file, to=args.format, outputfile=output_file, extra_args=['--toc', '--toc-depth=2', '-V toc-title:"Table Of Contents"'])
+    convert_file(source_file=str(markdown_file.resolve()), to=args.format, outputfile=str(output_file.resolve()), extra_args=['--toc', '--toc-depth=2', '-V toc-title:"Table Of Contents"'])
