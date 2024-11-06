@@ -7,4 +7,3 @@ dependencies:
   - colorama
   - pypdf
   - joblib
-prefix: C:\Users\Admin\miniconda3\envs\pdf
