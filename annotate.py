@@ -44,6 +44,7 @@ def processPdf(file: Path, print_width: int=60) -> None|ProcessedPdf:
         
         text: str|None = None
         if args.text and not text_file.exists():
+            text_file.parent.mkdir(exist_ok=True)
             text = ' '.join(ex.text).strip()
             # Remove non-utf8 characters.
             text = bytes(text, 'raw_unicode_escape').decode('utf-8', 'ignore')
