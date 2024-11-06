@@ -2,8 +2,8 @@ name: pdf
 channels:
   - defaults
 dependencies:
-  - pypandoc
+  - pypandoc==1.6.3
   - python==3.12
   - colorama
-  - pypdf
+  - pypdf==4.2.0
   - joblib
