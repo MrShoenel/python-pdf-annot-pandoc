@@ -10,9 +10,9 @@ to to select a directory, output-format, whether to also extract text, etc.
 
 from argparse import ArgumentParser
 from pathlib import Path
-from lib.helpers import print_green, print_red, print_yellow, ProcessedPdf
-from lib.extractor import Extractor
-from lib.markdown import MarkdownWithToc
+from src.helpers import print_green, print_red, print_yellow, ProcessedPdf
+from src.extractor import Extractor
+from src.markdown import MarkdownWithToc
 from joblib import Parallel, delayed
 from pypandoc import convert_file
 
