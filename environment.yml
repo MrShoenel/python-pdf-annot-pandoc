@@ -1,9 +1,38 @@
 name: pdf
 channels:
   - defaults
+  - conda-forge
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+  - https://repo.anaconda.com/pkgs/msys2
 dependencies:
-  - pypandoc==1.6.3
-  - python==3.12
-  - colorama
-  - pypdf==4.2.0
-  - joblib
+  - bzip2=1.0.8=h2466b09_7
+  - ca-certificates=2024.12.14=h56e8100_0
+  - colorama=0.4.6=pyhd8ed1ab_1
+  - expat=2.6.4=he0c23c2_0
+  - joblib=1.4.2=pyhd8ed1ab_1
+  - libexpat=2.6.4=he0c23c2_0
+  - libffi=3.4.4=hd77b12b_1
+  - liblzma=5.6.3=h2466b09_1
+  - liblzma-devel=5.6.3=h2466b09_1
+  - libsqlite=3.48.0=h67fdade_1
+  - libzlib=1.2.13=h2466b09_6
+  - openssl=3.4.0=ha4e3fda_1
+  - pandoc=3.6.2=h57928b3_0
+  - pip=24.3.1=pyh8b19718_2
+  - pypandoc=1.15=pyhd8ed1ab_0
+  - pypdf=5.1.0=pyha770c72_1
+  - python=3.12.0=h1d929f7_0
+  - setuptools=75.8.0=pyhff2d567_0
+  - sqlite=3.48.0=h2466b09_1
+  - tk=8.6.14=h0416ee5_0
+  - typing_extensions=4.12.2=pyha770c72_1
+  - tzdata=2025a=h78e105d_0
+  - ucrt=10.0.22621.0=h57928b3_1
+  - vc=14.40=h2eaa2aa_1
+  - vc14_runtime=14.42.34433=h6356254_24
+  - vs2015_runtime=14.42.34433=hfef2bbc_24
+  - wheel=0.45.1=pyhd8ed1ab_1
+  - xz=5.6.3=h208afaa_1
+  - xz-tools=5.6.3=h2466b09_1
+  - zlib=1.2.13=h2466b09_6
