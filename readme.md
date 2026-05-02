@@ -14,7 +14,7 @@ This application does the following things:
 
 # Purpose
 
-Simple: I read a lot of papers and make comments. Sometimes it's hard to remember where I made a comment, but often I do remember at least a keyword. I can then go to the markdown/HTML summary and quickly search there across **all** PDFs and their comments simultaneously.
+Simple: I read a lot of papers and make comments. Sometimes it's hard to remember where I made a comment, but often I do remember at least a keyword. I can then go to the markdown/HTML summary and quickly search there across **all** PDFs and their comments simultaneously, **without** the need of some fancy database.
 
 This program also extracts the textual content of each PDF.
 The purpose here is simple, too: Sometimes I remember having read something specific, but I am not sure where exactly.
