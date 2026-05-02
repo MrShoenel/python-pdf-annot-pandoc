@@ -56,7 +56,7 @@ def processPdf(file: Path, print_width: int=60) -> None|ProcessedPdf:
         print_green(f'Finished: {f"{fname},".ljust(print_width)} ', f'found {len(annots)} annotations in file.')
         return ProcessedPdf(pdf_file=file, annotations=annots, text=text)
     except Exception as ex:
-        print_red('Failed processing PDF: ', ex)
+        print_red('Failed processing PDF: ', str(ex))
         return None
 
 
@@ -70,7 +70,7 @@ to_pdf = args.format == 'pdf'
 markdown = MarkdownWithToc().add_all_processed(procPdfs=procPdfs)
 document = markdown.generate_document(generate_md_toc=not to_pdf)
 
-markdown_file = dir.joinpath(f'./{args.output}').resolve()
+markdown_file = dir.joinpath(f'./{args.output}')
 with open(file=markdown_file, mode='w', encoding='utf-8') as fp:
     fp.write(document)
 

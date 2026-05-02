@@ -2,6 +2,7 @@ from colorama import Fore, Style
 from dataclasses import dataclass
 from pathlib import Path
 from datetime import datetime
+from typing import Optional
 
 
 
@@ -17,7 +18,7 @@ class Annotation:
 class ProcessedPdf:
     pdf_file: Path
     annotations: list[Annotation]
-    text: str=None
+    text: Optional[str]=None
 
     @property
     def has_annotations(self) -> bool:
